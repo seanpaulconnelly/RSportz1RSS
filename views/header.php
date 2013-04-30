@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>AAU Junior Olympics on RSportz - Play, Score, Share.</title>
+		<title>RSportz 1.0 Feed Test</title>
 		<meta content='width=device-width, initial-scale=1.0' name='viewport'>
 		<meta content='RSportz is a free tool that helps you register online for leagues and tournaments, see your stats in real time, and share to social networks.' name='description'>
 		<link rel="shortcut icon" href="favicon.ico" />
@@ -22,17 +22,3 @@
 		<meta content='RSportz is a free tool that helps you register online for leagues and tournaments, see your stats in real time, and share to social networks.' property='og:description'>
 	</head>
 	<body>
-	<script type="text/javascript">
-
-	var _gaq = _gaq || [];
-  	_gaq.push(['_setAccount', 'UA-7760526-1']);
-  	_gaq.push(['_setDomainName', 'rsportz.com']);
-  	_gaq.push(['_trackPageview']);
-
-	  (function() {
-    	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  	})();
-
-	</script>

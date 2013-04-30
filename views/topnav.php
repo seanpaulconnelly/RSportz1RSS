@@ -5,7 +5,7 @@
 						<div class='logo-container'>
 							<h1><a href="/">RSportz</a></h1>
 						</div>
-						<h4 class='tagline pull-left'>AAU Inline Hockey - Upcoming Games</h4>
+						<h4 class='tagline pull-left'>RSportz 1.0 Feed Test</h4>
 						
 					</div>
 				</div>
