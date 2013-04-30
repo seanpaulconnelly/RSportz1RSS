@@ -11,8 +11,8 @@ function rsportz_recent_news() {
       $author = $news[$i]->author;
   		$description = $news[$i]->description;
   		echo '<tr>';
+      echo '<td><a href=' . $newsLink . '>' . $newsTitle . '</a></td>';
       echo '<td>' . $author . '</td>';
-  		echo '<td><a href=' . $newsLink . '>' . $newsTitle . '</a></td>';
       echo '<td>' . $pubDate . '</td>';
   		echo '<td>' . $description . '</td>';
   		echo '</tr>';

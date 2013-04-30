@@ -2,8 +2,8 @@
 <table class="table table-striped">
   <thead>
     <tr>
-      <th>Author</th>
       <th>Title</th>
+      <th>Author</th>
       <th>Description</th>
       <th>Date</th>
     </tr>
