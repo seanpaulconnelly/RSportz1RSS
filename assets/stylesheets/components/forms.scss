@@ -1,0 +1,54 @@
+label {
+  font-weight: bold;
+  color: #5a5a5a;
+}
+
+.control-group.error > label {
+  color: #5a5a5a;
+}
+
+.control-group.error input, .control-group.error select, .control-group.error textarea {
+  border: 1px solid #ff2d07;
+  color: #ff2d07;
+}
+
+.control-group.error .help-block, .control-group.error .help-inline {
+  color: #ff2d07;
+}
+
+.controls {
+  position: relative;
+}
+
+.controls .help-inline {
+  position: absolute;
+  top: -24px;
+  right: 2%;
+}
+
+.control-group {
+  padding-bottom: 12px;
+}
+
+input[type="text"], input[type="password"] {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border: 1px solid #e3e3e3;
+}
+
+textarea {
+  border: 1px solid #e3e3e3;
+}
+
+/* jquery.validate error styles */
+label.error {
+  color: #ff2d07;
+  position: absolute;
+  top: -24px;
+  right: 2%;
+  font-weight: normal;
+}
+
+input.error, textarea.error {
+  border: 1px solid #ff2d07;
+}

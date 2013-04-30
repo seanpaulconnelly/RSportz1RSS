@@ -1,0 +1,5 @@
+.btn-blue, .btn-green, .btn-dark-blue {
+ display: inline-block;
+ *display: inline;
+ zoom: 1;
+}

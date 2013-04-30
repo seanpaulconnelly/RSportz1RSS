@@ -1,0 +1,14 @@
+@mixin kellySlab {
+  font-family: 'Kelly Slab', Georgia, Palatino, serif;
+}
+
+h1, h2, h3, h4 {
+  @include kellySlab;
+  text-transform: uppercase;
+}
+
+h2.headline {
+  text-align: center;
+  padding: 20px 0;
+}
+

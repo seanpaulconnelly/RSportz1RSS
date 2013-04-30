@@ -1,0 +1,79 @@
+@mixin rsportz-button {
+  display: inline-block;
+  border: 0;
+  padding: 8px 15px 7px 15px;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 1px -1px 0px rgba(0, 0, 0, 0.30);
+  @include border-radius(4px);
+  @include box-shadow(0px 1px 5px rgba(0, 0, 0, 0.30));
+  @include kellySlab;
+  &:hover {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+.btn-blue {
+  background: #627bac;
+  @include rsportz-button;
+  @include gradient(#6880b0, #5b73a6);
+  &:hover {
+    background: lighten(#627bac, 3%);
+    @include gradient(lighten(#6880b0, 3%), lighten(#5b73a6, 3%));
+  }
+}
+
+.btn-green {
+  background: #46a057;
+  @include rsportz-button;
+  @include gradient(#56ad67, #46a057);
+  &:hover {
+    background: lighten(#46a057, 3%);
+    @include gradient(lighten(#56ad67, 3%), lighten(#46a057, 3%));
+  }
+}
+
+.btn-green.disabled {
+  background: #46a057;
+  color:#fff;
+  cursor:default;
+  @include gradient(#56ad67, #46a057);
+  &:hover {
+    background: #46a057;
+    @include gradient(#56ad67, #46a057);
+  }
+}
+
+.btn-dark-blue {
+  background: #3e4757;
+  @include rsportz-button;
+  @include gradient(#4c5566, #3e4757);
+  &:hover {
+    background: lighten(#3e4757, 3%);
+    @include gradient(lighten(#4c5566, 3%), lighten(#3e4757, 3%));
+  }
+}
+
+@mixin button-icon {
+  width: 18px;
+  height: 18px;
+  position: relative;
+  left: -3px;
+  top: -2px;
+}
+
+.icon-facebook {
+  @include button-icon;
+  background: url('images/sprite-btn-facebook-18x18.png') 0px 0px no-repeat;
+}
+
+.icon-register {
+  @include button-icon;
+  background: url('images/sprite-btn-registration-18x18.png') 0px 0px no-repeat;
+}
