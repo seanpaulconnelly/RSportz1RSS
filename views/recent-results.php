@@ -1,4 +1,4 @@
-<?php require 'controllers/games.php'; ?>
+<?php require 'controllers/recent-results.php'; ?>
 <table class="table table-striped">
   <thead>
     <tr>
@@ -7,6 +7,6 @@
     </tr>
   </thead>
   <tbody>
-  	<?php echo rsportz_games(); ?>
+  	<?php echo rsportz_recent_results(); ?>
   </tbody>
 </table>
