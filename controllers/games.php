@@ -1,8 +1,7 @@
 
 <?php
-
 function rsportz_games() {
-	//Loop through for the upcoming 10 games
+	//Loop through for the upcoming 10 games (that's all the feed will give you anyway)
   include 'models/games.php';
 	for ($i = 0; $i < 10; $i++) {
 		//Set the variables for each child
