@@ -6,10 +6,10 @@ function rsportz_recent_news() {
 	for ($i = 0; $i < 10; $i++) {
 		//Set the variables for each child
   		$newsTitle = $news[$i]->title;
-  		$newsLink = $news[$i]->link;
+      $newsLink = $news[$i]->link;
       $pubDate = $news[$i]->pubDate;
       $author = $news[$i]->author;
-  		$description = $news[$i]->description;
+      $description = $news[$i]->description;
   		echo '<tr>';
       echo '<td><a href=' . $newsLink . '>' . $newsTitle . '</a></td>';
       echo '<td>' . $author . '</td>';
