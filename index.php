@@ -5,7 +5,7 @@ require_once 'models/games.php';
 ?>
 <div class="container">
   <div class="span12">
-    <h4>Choose from a feed</h4>
+    <h4>Choose a feed</h4>
     <ul class="nav nav-tabs" id="myTab">
       <li><a href="#games" data-toggle="tab">Games</a></li>
       <li><a href="#recent-results" data-toggle="tab">Recent Results</a></li>
