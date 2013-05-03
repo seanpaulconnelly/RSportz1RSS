@@ -1,7 +1,6 @@
 <?php 
 include 'views/header.php';
 include 'views/topnav.php';
-require_once 'models/games.php';
 ?>
 <div class="container">
   <div class="span12">
