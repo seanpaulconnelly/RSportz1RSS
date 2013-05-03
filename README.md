@@ -1,15 +1,16 @@
 This is only a test
 ==============
-Just checking out the per-organization RSS feeds offered up by RSportz 1.0 in prep for the JOs/FIRS.  
+PHP implementation of the per organization RSS feeds offered up by RSportz 1.0.  
 
+---
 
 #### Games Feed
-Everything under `description` is a a chunk of HTML elements with the appropriate [XML Character References](XML_character_references).  We can make this work.
+Everything under `description` is a chunk of HTML elements with the appropriate [XML Character References](XML_character_references).  We can make this work.
 
 ---
 
 #### Recent Results Feed
-Much like Games, everthing under `description` is a chunk of HTML elements.  Unfortunately, the feed is invalid--showing `<` and `>` instead of `&lt;` and `&gt;`.  We can still make this work.
+Much like Games, everthing under `description` is a chunk of HTML elements.  The feed is showing `<` and `>` instead of `&lt;` and `&gt;`.  Which, interestingly enough, makes it easier to target elements and style them.
 
 ---
 
