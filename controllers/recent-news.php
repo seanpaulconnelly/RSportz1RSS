@@ -1,4 +1,3 @@
-
 <?php
 function rsportz_recent_news() {
 	//Loop through for the upcoming 10 games (that's all the feed will give you anyway)
