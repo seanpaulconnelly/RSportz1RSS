@@ -9,13 +9,13 @@
     </ul>
     <div class="tab-content">
       <div class="tab-pane active" id="games">
-        <?php include 'views/games.php'; ?>
+        <?php include 'views/feeds/games.php'; ?>
       </div>
       <div class="tab-pane" id="recent-results">
-        <?php include 'views/recent-results.php'; ?>
+        <?php include 'views/feeds/recent-results.php'; ?>
       </div>
       <div class="tab-pane" id="recent-news">
-        <?php include 'views/recent-news.php'; ?>
+        <?php include 'views/feeds/recent-news.php'; ?>
       </div>
     </div>
 
