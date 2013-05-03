@@ -22,3 +22,15 @@
 		<meta content='RSportz is a free tool that helps you register online for leagues and tournaments, see your stats in real time, and share to social networks.' property='og:description'>
 	</head>
 	<body>
+	<div class='topnav'>
+		<div class='container'>
+			<div class='row'>
+				<div class='span12'>
+					<div class='logo-container'>
+						<h1><a href="/">RSportz</a></h1>
+					</div>
+					<h4 class='tagline pull-left'>RSportz 1.0 Feed Test</h4>					
+				</div>
+			</div>
+		</div>
+	</div>

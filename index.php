@@ -1,7 +1,4 @@
-<?php 
-include 'views/header.php';
-include 'views/topnav.php';
-?>
+<?php include 'views/header.php'; ?>
 <div class="container">
   <div class="span12">
     <h4>Choose a feed</h4>
