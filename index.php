@@ -8,6 +8,7 @@
       <li><a href="#recent-news" data-toggle="tab">Recent News</a></li>
     </ul>
     <div class="tab-content">
+      <div class="alert alert-error">Feeds are not working as of new deploy to RSportz 1.0 on 5/17/13.</div>
       <div class="tab-pane active" id="games">
         <?php include 'views/feeds/games.php'; ?>
       </div>
