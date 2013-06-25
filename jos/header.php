@@ -3,6 +3,7 @@
 	<head>
 		<title>2013 Junior Olympics of Inline Hockey - Media Screen</title>
 		<meta content='width=device-width, initial-scale=1.0' name='viewport'>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 		<meta content='RSportz is a free tool that helps you register online for leagues and tournaments, see your stats in real time, and share to social networks.' name='description'>
 		<link rel="shortcut icon" href="favicon.ico" />
 		<link href='http://fonts.googleapis.com/css?family=Kelly+Slab' rel='stylesheet' type='text/css'>

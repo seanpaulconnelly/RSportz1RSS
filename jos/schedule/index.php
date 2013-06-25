@@ -2,7 +2,7 @@
 
 function rsportz_games() {
 	//Loop through for the upcoming 10 games (that's all the feed will give you anyway)
-  //Call the Games URL -- using Skate San Diego as a test subject
+  //Call the Games URL
   $gamesFeed = simplexml_load_file("../../rss-examples/games.rss");
   //Set the 'item's as games
   $games = $gamesFeed->channel->item;
@@ -10,9 +10,17 @@ function rsportz_games() {
 		//Set the variables for each child
   		$teams = $games[$i]->title;
   		$description = $games[$i]->description;
+
+      // Search the haystack for needleOne; replace with needleTwo
+      $haystack = $description;
+      $needleOne = '·';
+      $needleTwo = '<br/>';
+
+      $cleanDescription = str_replace($needleOne, $needleTwo, $haystack);
+
   		echo '<div class="row matchup-details">';
       echo '<p>' . $teams . '</p>';
-  		echo $description;
+  		echo $cleanDescription;
       echo '</div>';
 	}
 }

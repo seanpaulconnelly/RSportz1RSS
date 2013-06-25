@@ -1,0 +1,19 @@
+.timedate {
+	p {
+		text-align:center;
+		&:nth-child(1) {
+			font-size:1em;
+			margin-bottom:5px;
+			text-transform:uppercase;
+		}
+		&:nth-child(2) {
+			font-size:3.5em;
+		}
+	}
+}
+
+.outbound {
+	p {
+		text-align:center;
+	}
+}
