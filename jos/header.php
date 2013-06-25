@@ -14,6 +14,3 @@
 		<script src="../../assets/application.min.js" type="text/javascript"></script>
 	</head>
 	<body>
-	<header>
-		<p class="lead">header</p>
-	</header>

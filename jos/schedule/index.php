@@ -9,27 +9,24 @@ function rsportz_games() {
 	for ($i = 0; $i < 10; $i++) {
 		//Set the variables for each child
   		$teams = $games[$i]->title;
-  		$gameLink = $games[$i]->link;
   		$description = $games[$i]->description;
-  		echo '<tr>';
-  		echo '<td><a href=' . $gameLink . '>' . $teams . '</a></td>';
-  		echo '<td>' . $description . '</td>';
-  		echo '</tr>';
+  		echo '<div class="row matchup-details">';
+      echo '<p>' . $teams . '</p>';
+  		echo $description;
+      echo '</div>';
 	}
 }
-
-include '../header.php'; 
-
 ?>
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th>Game</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
+
+<div class="container">
+<?php include '../header.php'; ?>
+<div class="row">
+  <div class="span8 schedule-table">
     <?php echo rsportz_games(); ?>
-  </tbody>
-</table>
+  </div>
+  <div class="span4">
+     <?php include '../sidebar.php'; ?>
+  </div>
+</div>
 <?php include '../footer.php'; ?>
+</div>

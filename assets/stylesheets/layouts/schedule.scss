@@ -1,0 +1,26 @@
+.schedule-table {
+	.matchup-details {
+		color:#313232;
+		&:nth-child(odd) {
+			background:#d1d1d1;
+		}
+		p {
+			width:140px;
+			margin-left:0;
+			float:left;
+		}
+		.game_details {
+			p {
+				width:140px;
+				margin-left:20px;
+				float:left;
+				strong {
+					display:none;
+				}
+				&:nth-child(1) {
+					font-weight:bold;
+				}
+			}
+		}
+	}
+}
