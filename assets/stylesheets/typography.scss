@@ -1,14 +1,15 @@
-@mixin kellySlab {
-  font-family: 'Kelly Slab', Georgia, Palatino, serif;
+@mixin lato {
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
 }
 
-h1, h2, h3, h4 {
-  @include kellySlab;
-  text-transform: uppercase;
+@mixin helvetica {
+  font-family: Helvetica, Arial, sans-serif;
 }
 
-h2.headline {
-  text-align: center;
-  padding: 20px 0;
+h1, h2, h3, h4, h5, h6 {
+  @include lato;
 }
 
+body {
+	@include helvetica;
+}

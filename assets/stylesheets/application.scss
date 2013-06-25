@@ -11,21 +11,8 @@
  */
 
 @import "mixins/reset";
-@import "mixins/responsive";
 @import "mixins/css3";
 
 @import "vendor/bootstrap";
 
 @import "typography";
-
-@import "layouts/topnav";
-@import "layouts/body";
-@import "layouts/footer";
-
-@import "components/wells";
-@import "components/buttons";
-@import "components/forms";
-
-.centre {
-  text-align: center;
-}
