@@ -9,29 +9,33 @@ function rsportz_recent_results() {
 	for ($i = 0; $i < 10; $i++) {
 		  //Set the variables for each child
   		$teams = $results[$i]->title;
-  		$gameLink = $results[$i]->link;
-
-      	//Target the HTML elements.  Hackfest.
   		$result = $results[$i]->description->div->p->span;
 
-  		echo '<tr>';
-  		echo '<td><a href=' . $gameLink . '>' . $teams . '</a></td>';
-  		echo '<td>' . $result . '</td>';
-  		echo '</tr>';
+      $haystackTeams = $teams;
+      $needleOneTeams = "vs. ";
+      $needleTwoTeams = "<span class='vs'>vs.</span><br/>";
+      $cleanTeams = str_replace($needleOneTeams, $needleTwoTeams, $haystackTeams);
+
+      echo '<div class="row matchup-details result">';
+  		echo '<p>' . $cleanTeams . '</p>';
+  		echo '<p>' . $result . '</p>';
+      echo '</div>';
 	}
 }
+?>
 
-include '../header.php'; ?>
-
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th>Game</th>
-      <th>Result</th>
-    </tr>
-  </thead>
-  <tbody>
-  	<?php echo rsportz_recent_results(); ?>
-  </tbody>
-</table>
+<div class="container">
+  <?php include '../header.php'; ?>
+  <div class="row">
+    <div class="span8 schedule-table">
+      <div class="row">
+        <h1>results <span>schedule</span></h1>
+      </div>
+      <?php echo rsportz_recent_results(); ?>
+    </div>
+    <div class="span4">
+       <?php include '../sidebar.php'; ?>
+    </div>
+  </div>
+</div>
 <?php include '../footer.php'; ?>
