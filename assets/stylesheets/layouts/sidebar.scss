@@ -12,8 +12,14 @@
 	}
 }
 
-.outbound {
+.link {
 	p {
 		text-align:center;
+		font-size:1.3em;
+		&.lead {
+			font-size:1.5em;
+			margin-bottom:10px;
+			text-decoration:underline;
+		}
 	}
 }
