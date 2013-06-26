@@ -1,0 +1,11 @@
+footer {
+	.row {
+		background:url('images/bg/rebel.png') repeat;
+		padding:8px 0;
+		@include lato;
+		p.lead {
+			margin-bottom:0;
+			color:#eee;
+		}
+	}
+}

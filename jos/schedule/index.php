@@ -31,17 +31,17 @@ function rsportz_games() {
 ?>
 
 <div class="container">
-<?php include '../header.php'; ?>
-<div class="row">
-  <div class="span8 schedule-table">
-    <div class="row">
-      <h1>schedule <span class="muted">results</span></h1>
+  <?php include '../header.php'; ?>
+  <div class="row">
+    <div class="span8 schedule-table">
+      <div class="row">
+        <h1>schedule <span>results</span></h1>
+      </div>
+      <?php echo rsportz_games(); ?>
     </div>
-    <?php echo rsportz_games(); ?>
-  </div>
-  <div class="span4">
-     <?php include '../sidebar.php'; ?>
+    <div class="span4">
+       <?php include '../sidebar.php'; ?>
+    </div>
   </div>
 </div>
 <?php include '../footer.php'; ?>
-</div>

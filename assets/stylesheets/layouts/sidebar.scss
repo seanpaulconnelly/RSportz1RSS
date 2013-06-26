@@ -13,13 +13,55 @@
 }
 
 .link {
-	p {
+	background:url('images/bg/rebel.png') repeat;
+	color:#eee;
+	p.lead {
 		text-align:center;
-		font-size:1.3em;
-		&.lead {
-			font-size:1.5em;
-			margin-bottom:10px;
-			text-decoration:underline;
+		font-size:1.4em;
+		margin:0;
+		padding:10px 0;
+		line-height:40px;
+		@include lato;
+	}
+}
+
+.twitter {
+	width:300px;
+	padding:10px 10px 0 10px;
+	background:url('images/bg/rebel.png') repeat;
+	margin-top:19px;
+	.twitter-user {
+		.user-img {
+			margin-left:0;
 		}
+		.user-bio {
+			margin-left:5px;
+			width:212px;
+			p {
+				&:nth-child(1) {
+					font-weight:bold;
+					font-size:1.1em;
+					margin:3px 0 1px;
+					color:#eee;
+				}
+				&:nth-child(2) {
+					color:#707070;
+				}
+			}
+		}
+	}
+	.tweet {
+		margin-left:0;
+		margin-top:10px;
+		width:auto;
+		padding:5px;
+		border:1px solid #ccc;
+		font-size:1.2em;
+		line-height:1.4em;
+		height:215px;
+		overflow:hidden;
+		background:url('images/bg/mooning.png') repeat;
+		@include lato;
+
 	}
 }
