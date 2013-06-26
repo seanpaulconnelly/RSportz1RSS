@@ -1,4 +1,12 @@
 .schedule-table {
+	font-size:.9em;
+	h1 {
+		margin-left:20px;
+		font-weight:100;
+		span {
+			color:#ddd;
+		}
+	}
 	.matchup-details {
 		color:#313232;
 		&:nth-child(odd) {
