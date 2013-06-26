@@ -13,8 +13,8 @@ function rsportz_games() {
 
       // Search the haystack for needleOne; replace with needleTwo
       $haystack = $description;
-      $needleOne = '·';
-      $needleTwo = '<br/>';
+      $needleOne = array("·", "Jul", ", '13 ");
+      $needleTwo = array("<br/>", "July", "<br/>");
 
       $cleanDescription = str_replace($needleOne, $needleTwo, $haystack);
 
@@ -30,6 +30,9 @@ function rsportz_games() {
 <?php include '../header.php'; ?>
 <div class="row">
   <div class="span8 schedule-table">
+    <div class="row">
+      <h1>schedule <span class="muted">results</span></h1>
+    </div>
     <?php echo rsportz_games(); ?>
   </div>
   <div class="span4">
