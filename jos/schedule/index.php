@@ -12,14 +12,18 @@ function rsportz_games() {
   		$description = $games[$i]->description;
 
       // Search the haystack for needleOne; replace with needleTwo
-      $haystack = $description;
-      $needleOne = array("·", "Jul", ", '13 ");
-      $needleTwo = array("<br/>", "July", "<br/>");
+      $haystackDesc = $description;
+      $needleOneDesc = array("·", "Jul", ", '13 ");
+      $needleTwoDesc = array("<br/>", "July", "<br/>");
+      $cleanDescription = str_replace($needleOneDesc, $needleTwoDesc, $haystackDesc);
 
-      $cleanDescription = str_replace($needleOne, $needleTwo, $haystack);
+      $haystackTeams = $teams;
+      $needleOneTeams = "vs. ";
+      $needleTwoTeams = "<span class='vs'>vs.</span><br/>";
+      $cleanTeams = str_replace($needleOneTeams, $needleTwoTeams, $haystackTeams);
 
   		echo '<div class="row matchup-details">';
-      echo '<p>' . $teams . '</p>';
+      echo '<p>' . $cleanTeams . '</p>';
   		echo $cleanDescription;
       echo '</div>';
 	}

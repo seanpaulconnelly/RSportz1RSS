@@ -1,35 +1,51 @@
 .schedule-table {
 	font-size:.9em;
 	h1 {
-		margin-left:20px;
+		margin-left:40px;
 		font-weight:100;
 		span {
-			color:#ddd;
+			color:#eee;
 		}
 	}
 	.matchup-details {
-		color:#313232;
+		padding:10px 0;
+		border-top:1px solid #aaa;
+		color:#444;
 		&:nth-child(odd) {
 			background:#d1d1d1;
 		}
 		p {
-			width:220px;
-			margin-left:0;
+			width:260px;
 			float:left;
+			margin-left:20px;
+			margin-bottom:0;
+			&:nth-child(1) {
+				font-size:1.3em;
+				span.vs {
+					font-style:italic;
+					text-decoration:underline;
+				}
+			}
 		}
 		.game_details {
 			p {
+				font-size:1em;
 				width:140px;
 				margin-left:20px;
+				margin-bottom:0;
 				float:left;
 				strong {
 					display:none;
 				}
 				&:nth-child(1) {
 					font-weight:bold;
+					width:80px;
 				}
 				&:nth-child(2) {
 					width:80px;
+				}
+				&:nth-child(4) {
+					display:none;
 				}
 			}
 		}
