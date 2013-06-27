@@ -19,7 +19,7 @@
 			<p class="lead"><?php echo $currentTime; ?></p>
 		</div>
 	</div>
-	<div class="row twitter">
+	<div class="row social">
 	<?php include '../../Oauth.php';		
 	$bearer_token = get_bearer_token(); // get the bearer token
 	$json = json_decode(search_for_a_term($bearer_token, "%23stanleycup", 'mixed', '1'));
@@ -31,7 +31,7 @@
 
 	invalidate_bearer_token($bearer_token); // invalidate the token
 	?>
-		<div class="twitter-user clearfix">
+		<div class="social-user clearfix">
 			<div class="span1 user-img">
 				<img class="img-polaroid" src="<?php echo $profileImageUrl; ?>" alt="Profile"/>
 			</div>

@@ -25,14 +25,18 @@
 	}
 }
 
-.twitter {
+.social {
 	width:300px;
 	padding:10px 10px 0 10px;
 	background:url('images/bg/rebel.png') repeat;
 	margin-top:19px;
-	.twitter-user {
+	.social-user {
 		.user-img {
 			margin-left:0;
+			.insta-pro-pic {
+				width:48px;
+				height:48px;
+			}
 		}
 		.user-bio {
 			margin-left:5px;
@@ -63,5 +67,14 @@
 		background:url('images/bg/mooning.png') repeat;
 		@include lato;
 
+	}
+	.instagram-photo {
+		img {
+			background:url('images/bg/mooning.png') repeat;
+			height:211px;
+			padding:8px;
+			margin-left:10px;
+			margin-top:10px;
+		}
 	}
 }

@@ -6,6 +6,8 @@ Based on https://github.com/RSportz/RSportz1RSS
 
 Help on the new Twitter 1.1 API from https://github.com/jonhurlock/Twitter-Application-Only-Authentication-OAuth-PHP
 
+Help with Instagram from https://github.com/sesser/Instaphp plus a little hackery
+
 ---
 
 960x720 output will live on TV screens during the Junior Olympics of Inline Hockey and FIRS World Championships

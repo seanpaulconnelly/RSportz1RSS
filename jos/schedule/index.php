@@ -40,7 +40,7 @@ function rsportz_games() {
       <?php echo rsportz_games(); ?>
     </div>
     <div class="span4">
-       <?php include '../sidebar.php'; ?>
+       <?php include '../sidebar-schedule.php'; ?>
     </div>
   </div>
 </div>

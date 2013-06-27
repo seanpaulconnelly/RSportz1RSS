@@ -22,6 +22,17 @@ function rsportz_recent_results() {
       echo '</div>';
 	}
 }
+
+//-- Include Instagram library
+include_once '../../instaphp/instaphp.php';
+//-- Get an instance of the Instaphp object
+$api = Instaphp\Instaphp::Instance();
+//-- Force-use manually generated access_token http://jenwachter.com/2013/04/22/retrive-the-access-token-for-your-instagram-account/
+
+$token = '225748381.fee2307.a972db7ef3bd482892841c30e2ecc6c3';
+setcookie('instaphp', $token, strtotime('30 days'));
+//-- once you have a token, update the Instaphp instance so it passes the token for future calls
+$api = Instaphp\Instaphp::Instance($token);   
 ?>
 
 <div class="container">
@@ -34,7 +45,7 @@ function rsportz_recent_results() {
       <?php echo rsportz_recent_results(); ?>
     </div>
     <div class="span4">
-       <?php include '../sidebar.php'; ?>
+       <?php include '../sidebar-results.php'; ?>
     </div>
   </div>
 </div>
