@@ -3,10 +3,13 @@ PHP implementation of the per organization RSS feeds offered up by RSportz 1.0.
 ---
 
 Live URLs
+
 http://seanconnelly.me/rsportz/joscreens/jos/schedule/
+
 http://seanconnelly.me/rsportz/joscreens/jos/results/
 
 http://seanconnelly.me/rsportz/joscreens/firs/schedule/
+
 http://seanconnelly.me/rsportz/joscreens/firs/results/
 
 ---
