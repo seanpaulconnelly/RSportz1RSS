@@ -22,7 +22,7 @@
 	<div class="row social">
 	<?php include '../../Oauth.php';		
 	$bearer_token = get_bearer_token(); // get the bearer token
-	$json = json_decode(search_for_a_term($bearer_token, "%23stanleycup", 'mixed', '1'));
+	$json = json_decode(search_for_a_term($bearer_token, "%23firs2013worlds", 'mixed', '1'));
 	$tweetText = $json->statuses['0']->text;
 	$realName = $json->statuses['0']->user->name;
 	$screenName = $json->statuses['0']->user->screen_name;

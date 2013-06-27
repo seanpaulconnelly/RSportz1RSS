@@ -22,7 +22,7 @@
 	<div class="row social">
 		<?php
 		//Search for the tag
-		$recentTags = $api->Tags->Recent('stanleycup');
+		$recentTags = $api->Tags->Recent('firs2013worlds');
 		$profileImageUrl = $recentTags->data['0']->caption->from->profile_picture;
 		$realName = $recentTags->data['0']->caption->from->full_name;
 		$screenName = $recentTags->data['0']->caption->from->username;
