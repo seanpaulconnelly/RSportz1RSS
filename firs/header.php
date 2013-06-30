@@ -11,7 +11,5 @@
 		<script src='//html5shiv.googlecode.com/svn/trunk/html5.js'></script>
 		<![endif]-->
 		<link href="../../assets/application.css" media="screen" rel="stylesheet" type="text/css" />
-		<script src="../../assets/jquery.min.js" type="text/javascript"></script>
-		<script src="../../assets/application.min.js" type="text/javascript"></script>
 	</head>
 	<body>
