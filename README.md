@@ -1,5 +1,5 @@
 ## Overview
-Media screen implementation of RSS feeds offered up by RSportz 1.0.  Also hits up Instagram and Twitter for a #firstopic and #aautopic.  All sections will are controlled with this library with exception to the date/time, which will be operated via screen software.
+Media screen implementation of RSS feeds offered up by RSportz 1.0.  Also hits up Instagram and Twitter for a #firstopic and #aautopic.  All sections are controlled with this library with exception to the date/time, which will be operated via screen software.
 
 ---
 
@@ -36,8 +36,8 @@ All areas should cycle independently of each other via URL page request.  Schedu
 
 ---
 
-Forked from https://github.com/RSportz/RSportz1RSS
+###### Forked from [@rsportz](https://github.com/RSportz/RSportz1RSS)
 
-Help on the new Twitter 1.1 API from https://github.com/jonhurlock/Twitter-Application-Only-Authentication-OAuth-PHP
+###### Help on the new Twitter 1.1 API from [@jonhurlock](https://github.com/jonhurlock/Twitter-Application-Only-Authentication-OAuth-PHP) 
 
-Help with Instagram from https://github.com/sesser/Instaphp plus a little hackery
+###### Help with Instagram from [@sesser](https://github.com/sesser/Instaphp) plus a little hackery
