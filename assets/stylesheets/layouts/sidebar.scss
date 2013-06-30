@@ -12,6 +12,19 @@
 	}
 }
 
+body.sidebar {
+	width:320px;
+	.row {
+		margin-left:0;
+	}
+}
+
+footer {
+	.row.sub-social {
+		padding:8px 10px;
+	}
+}
+
 .link {
 	background:url('images/bg/rebel.png') repeat;
 	color:#eee;
@@ -29,7 +42,8 @@
 	width:300px;
 	padding:10px 10px 0 10px;
 	background:url('images/bg/rebel.png') repeat;
-	margin-top:19px;
+	margin-top:0;
+	margin-left:0;
 	.social-user {
 		.user-img {
 			margin-left:0;

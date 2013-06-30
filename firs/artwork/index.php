@@ -11,4 +11,14 @@
 		<![endif]-->
 		<link href="../../assets/application.css" media="screen" rel="stylesheet" type="text/css" />
 	</head>
-	<body>
+	<body class="sidebar">
+		<div class="row link">
+			<p class="lead">2013FIRSWorldChampionships.org</p>
+		</div>
+		<div class="row">
+			<div class="span4">
+				<img src="../../assets/images/firs-logo.jpg" alt="2013 Junior Olympics"/>
+			</div>
+		</div>
+	</body>
+</html>
