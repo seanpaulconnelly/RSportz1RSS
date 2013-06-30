@@ -35,17 +35,14 @@ setcookie('instaphp', $token, strtotime('30 days'));
 $api = Instaphp\Instaphp::Instance($token);   
 ?>
 
-<div class="container">
-  <?php include '../header.php'; ?>
+<?php include '../header.php'; ?>
+<div class="container fully">
   <div class="row">
-    <div class="span8 schedule-table">
+    <div class="span12 schedule-table">
       <div class="row">
         <h1>results <span>schedule</span></h1>
       </div>
       <?php echo rsportz_recent_results(); ?>
-    </div>
-    <div class="span4">
-       <?php include '../sidebar-results.php'; ?>
     </div>
   </div>
 </div>

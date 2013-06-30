@@ -30,17 +30,14 @@ function rsportz_games() {
 }
 ?>
 
-<div class="container">
-  <?php include '../header.php'; ?>
+<?php include '../header.php'; ?>
+<div class="container fully">
   <div class="row">
-    <div class="span8 schedule-table">
+    <div class="span12 schedule-table">
       <div class="row">
         <h1>schedule <span>results</span></h1>
       </div>
       <?php echo rsportz_games(); ?>
-    </div>
-    <div class="span4">
-       <?php include '../sidebar-schedule.php'; ?>
     </div>
   </div>
 </div>
