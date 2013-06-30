@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Joscreens : Production ready screen views for the 2013 JOs and FIRS" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Joscreens</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/seanpaulconnelly/joscreens">View on GitHub</a>
+
+          <h1 id="project_title">Joscreens</h1>
+          <h2 id="project_tagline">Production ready screen views for the 2013 JOs and FIRS</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/seanpaulconnelly/joscreens/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/seanpaulconnelly/joscreens/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h2>
+<a name="overview" class="anchor" href="#overview"><span class="octicon octicon-link"></span></a>Overview</h2>
+
+<p>Media screen implementation of RSS feeds offered up by RSportz 1.0.  Also hits up Instagram and Twitter for a #firstopic and #aautopic.  All sections are controlled with this library with exception to the date/time, which will be operated via screen software.</p>
+
+<hr><h3>
+<a name="layout-guide" class="anchor" href="#layout-guide"><span class="octicon octicon-link"></span></a>Layout Guide</h3>
+
+<p>All areas should cycle independently of each other via URL page request.  Schedule/Results cycle should leapfrog the Instagram/Twitter cycle at a timed interval:</p>
+
+<ol>
+<li>SCHEDULE and TWITTER load</li>
+<li>RESULTS loads, TWITTER stays</li>
+<li>RESULTS stays, INSTAGRAM loads</li>
+<li>SCHEDULE loads, INSTAGRAM stays</li>
+<li>SCHEDULE stays, TWITTER loads</li>
+<li>RESULTS loads, TWITTER stays</li>
+<li>RESULTS stays, INSTAGRAM loads</li>
+<li>9, 10, 11, 12, etc. etc</li>
+</ol><p><img src="https://raw.github.com/seanpaulconnelly/joscreens/master/layout-guide/screen-layout.png" alt="Layout Guide"></p>
+
+<hr><h3>
+<a name="live-urls" class="anchor" href="#live-urls"><span class="octicon octicon-link"></span></a>Live URLs:</h3>
+
+<h5>
+<a name="junior-olympics-of-inline-hockey" class="anchor" href="#junior-olympics-of-inline-hockey"><span class="octicon octicon-link"></span></a>Junior Olympics of Inline Hockey</h5>
+
+<ul>
+<li><a href="http://seanconnelly.me/rsportz/joscreens/jos/schedule/">http://seanconnelly.me/rsportz/joscreens/jos/schedule/</a></li>
+<li><a href="http://seanconnelly.me/rsportz/joscreens/jos/results/">http://seanconnelly.me/rsportz/joscreens/jos/results/</a></li>
+<li><a href="http://seanconnelly.me/rsportz/joscreens/jos/artwork/">http://seanconnelly.me/rsportz/joscreens/jos/artwork/</a></li>
+<li><a href="http://seanconnelly.me/rsportz/joscreens/jos/instagram/">http://seanconnelly.me/rsportz/joscreens/jos/instagram/</a></li>
+<li><a href="http://seanconnelly.me/rsportz/joscreens/jos/twitter/">http://seanconnelly.me/rsportz/joscreens/jos/twitter/</a></li>
+</ul><h5>
+<a name="firs-world-championships" class="anchor" href="#firs-world-championships"><span class="octicon octicon-link"></span></a>FIRS World Championships</h5>
+
+<ul>
+<li><a href="http://seanconnelly.me/rsportz/joscreens/firs/schedule/">http://seanconnelly.me/rsportz/joscreens/firs/schedule/</a></li>
+<li><a href="http://seanconnelly.me/rsportz/joscreens/firs/results/">http://seanconnelly.me/rsportz/joscreens/firs/results/</a></li>
+<li><a href="http://seanconnelly.me/rsportz/joscreens/firs/artwork/">http://seanconnelly.me/rsportz/joscreens/firs/artwork/</a></li>
+<li><a href="http://seanconnelly.me/rsportz/joscreens/firs/instagram/">http://seanconnelly.me/rsportz/joscreens/firs/instagram/</a></li>
+<li><a href="http://seanconnelly.me/rsportz/joscreens/firs/twitter/">http://seanconnelly.me/rsportz/joscreens/firs/twitter/</a></li>
+</ul><hr><h6>
+<a name="forked-from-rsportz" class="anchor" href="#forked-from-rsportz"><span class="octicon octicon-link"></span></a>Forked from <a href="https://github.com/RSportz/RSportz1RSS">@rsportz</a>
+</h6>
+
+<h6>
+<a name="help-on-the-new-twitter-11-api-from-jonhurlock" class="anchor" href="#help-on-the-new-twitter-11-api-from-jonhurlock"><span class="octicon octicon-link"></span></a>Help on the new Twitter 1.1 API from <a href="https://github.com/jonhurlock/Twitter-Application-Only-Authentication-OAuth-PHP">@jonhurlock</a>
+</h6>
+
+<h6>
+<a name="help-with-instagram-from-sesser-plus-a-little-hackery" class="anchor" href="#help-with-instagram-from-sesser-plus-a-little-hackery"><span class="octicon octicon-link"></span></a>Help with Instagram from <a href="https://github.com/sesser/Instaphp">@sesser</a> plus a little hackery</h6>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Joscreens maintained by <a href="https://github.com/seanpaulconnelly">seanpaulconnelly</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
