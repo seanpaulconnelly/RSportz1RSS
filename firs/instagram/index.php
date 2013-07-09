@@ -48,7 +48,7 @@ $api = Instaphp\Instaphp::Instance($token);
 <footer>
   <div class="row sub-social">
     <div class="span4">
-      <p class="lead"><img src="../../assets/images/instagram-icon-small.png" alt="Tag"> <img src="../../assets/images/twitter-bird-small.png" alt="Tweet"> #anaheim2013</p>
+      <p class="lead"><img src="../../assets/images/instagram-icon-small.png" alt="Tag"> #anaheim2013</p>
     </div>
   </div>
 </footer>
