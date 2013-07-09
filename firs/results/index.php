@@ -3,7 +3,7 @@
 function rsportz_recent_results() {
   //Loop through for the upcoming 10 games (that's all the feed will give you anyway)
   //Call the Recent Results URL
-	$resultsFeed = simplexml_load_file("../../rss-examples/results.rss");
+	$resultsFeed = simplexml_load_file("http://app.rsportz.com/entity_calendar/recent_results/42.rss");
 	//Set the 'item's as games
 	$results = $resultsFeed->channel->item;
 	for ($i = 0; $i < 10; $i++) {

@@ -3,7 +3,7 @@
 function rsportz_games() {
 	//Loop through for the upcoming 10 games (that's all the feed will give you anyway)
   //Call the Games URL
-  $gamesFeed = simplexml_load_file("../../rss-examples/games.rss");
+  $gamesFeed = simplexml_load_file("http://app.rsportz.com/entity_calendar/upcoming_games/97.rss");
   //Set the 'item's as games
   $games = $gamesFeed->channel->item;
 	for ($i = 0; $i < 10; $i++) {
