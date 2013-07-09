@@ -26,7 +26,7 @@ $api = Instaphp\Instaphp::Instance($token);
 <div class="row social">
   <?php
   //Search for the tag
-  $recentTags = $api->Tags->Recent('firs2013worlds');
+  $recentTags = $api->Tags->Recent('anaheim2013');
   $profileImageUrl = $recentTags->data['0']->caption->from->profile_picture;
   $realName = $recentTags->data['0']->caption->from->full_name;
   $screenName = $recentTags->data['0']->caption->from->username;
@@ -48,7 +48,7 @@ $api = Instaphp\Instaphp::Instance($token);
 <footer>
   <div class="row sub-social">
     <div class="span4">
-      <p class="lead"><img src="../../assets/images/instagram-icon-small.png" alt="Tag"> <img src="../../assets/images/twitter-bird-small.png" alt="Tweet"> #firs2013worlds</p>
+      <p class="lead"><img src="../../assets/images/instagram-icon-small.png" alt="Tag"> <img src="../../assets/images/twitter-bird-small.png" alt="Tweet"> #anaheim2013</p>
     </div>
   </div>
 </footer>

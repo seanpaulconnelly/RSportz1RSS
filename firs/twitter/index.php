@@ -13,7 +13,7 @@
 		<div class="row social">
 		<?php include '../../Oauth.php';		
 		$bearer_token = get_bearer_token(); // get the bearer token
-		$json = json_decode(search_for_a_term($bearer_token, "%23firs2013worlds", 'mixed', '1'));
+		$json = json_decode(search_for_a_term($bearer_token, "%23anaheim2013", 'mixed', '1'));
 		$tweetText = $json->statuses['0']->text;
 		$realName = $json->statuses['0']->user->name;
 		$screenName = $json->statuses['0']->user->screen_name;
@@ -39,7 +39,7 @@
 		<footer>
 			<div class="row sub-social">
 				<div class="span4">
-					<p class="lead"><img src="../../assets/images/instagram-icon-small.png" alt="Tag"> <img src="../../assets/images/twitter-bird-small.png" alt="Tweet"> #firs2013worlds</p>
+					<p class="lead"><img src="../../assets/images/instagram-icon-small.png" alt="Tag"> <img src="../../assets/images/twitter-bird-small.png" alt="Tweet"> #anaheim2013</p>
 				</div>
 			</div>
 		</footer>
