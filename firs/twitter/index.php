@@ -1,47 +1,54 @@
+<?php
+//-- Include Instagram library
+include_once '../../instaphp/instaphp.php';
+//-- Get an instance of the Instaphp object
+$api = Instaphp\Instaphp::Instance();
+//-- Force-use manually generated access_token http://jenwachter.com/2013/04/22/retrive-the-access-token-for-your-instagram-account/
+
+$token = '225748381.fee2307.a972db7ef3bd482892841c30e2ecc6c3';
+setcookie('instaphp', $token, strtotime('30 days'));
+//-- once you have a token, update the Instaphp instance so it passes the token for future calls
+$api = Instaphp\Instaphp::Instance($token);   
+?>
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>2013 Junior Olympics of Inline Hockey - Media Screen</title>
-		<meta content='width=device-width, initial-scale=1.0' name='viewport'>
-		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-		<meta content='RSportz is a free tool that helps you register online for leagues and tournaments, see your stats in real time, and share to social networks.' name='description'>
-		<link href='http://fonts.googleapis.com/css?family=Lato:100,400' rel='stylesheet' type='text/css'>
-		<script src='//html5shiv.googlecode.com/svn/trunk/html5.js'></script>
-		<link href="../../assets/application.css" media="screen" rel="stylesheet" type="text/css" />
-	</head>
-	<body class="sidebar">
-		<div class="row social">
-		<?php include '../../Oauth.php';		
-		$bearer_token = get_bearer_token(); // get the bearer token
-		$json = json_decode(search_for_a_term($bearer_token, "%23anaheim2013", 'mixed', '1'));
-		$tweetText = $json->statuses['0']->text;
-		$realName = $json->statuses['0']->user->name;
-		$screenName = $json->statuses['0']->user->screen_name;
-		$profileImageUrl = $json->statuses['0']->user->profile_image_url_https; 
-		$tweetSource = $json->statuses['0']->source; 
+  <head>
+    <title>2013 Junior Olympics of Inline Hockey - Media Screen</title>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta content='RSportz is a free tool that helps you register online for leagues and tournaments, see your stats in real time, and share to social networks.' name='description'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,400' rel='stylesheet' type='text/css'>
+    <script src='//html5shiv.googlecode.com/svn/trunk/html5.js'></script>
+    <link href="../../assets/application.css" media="screen" rel="stylesheet" type="text/css" />
+  </head>
+  <body class="sidebar">
 
-		invalidate_bearer_token($bearer_token); // invalidate the token
-		?>
-			<div class="social-user clearfix">
-				<div class="span1 user-img">
-					<img class="img-polaroid" src="<?php echo $profileImageUrl; ?>" alt="Profile"/>
-				</div>
-				<div class="span3 user-bio">
-					<p><?php echo $realName; ?></p>
-					<p>@<?php echo $screenName; ?></p>
-				</div>
-			</div>
-			<div class="span4 tweet">
-				<p><?php echo $tweetText; ?></p>
-				<p><small><img src="../../assets/images/twitter-bird-small.png" alt="Source ">Sent via <?php echo $tweetSource; ?>.</small></p>
-			</div>
-		</div>
-		<footer>
-			<div class="row sub-social">
-				<div class="span4">
-					<p class="lead"><img src="../../assets/images/instagram-icon-small.png" alt="Tag"> <img src="../../assets/images/twitter-bird-small.png" alt="Tweet"> #anaheim2013</p>
-				</div>
-			</div>
-		</footer>
-	</body>
-</html>
+<div class="row social">
+  <?php
+  //Search for the tag
+  $recentTags = $api->Tags->Recent('anaheim2013');
+  $profileImageUrl = $recentTags->data['0']->caption->from->profile_picture;
+  $realName = $recentTags->data['0']->caption->from->full_name;
+  $screenName = $recentTags->data['0']->caption->from->username;
+  $imageUrl = $recentTags->data['0']->images->standard_resolution->url;
+  ?>
+  <div class="social-user clearfix">
+    <div class="span1 user-img">
+      <img class="img-polaroid insta-pro-pic" src="<?php echo $profileImageUrl; ?>" alt="Profile"/>
+    </div>
+    <div class="span3 user-bio">
+      <p><?php echo $realName; ?></p>
+      <p>@<?php echo $screenName; ?></p>
+    </div>
+  </div>
+  <div class="span4 instagram-photo">
+    <?php echo '<img src="' . $imageUrl . '" alt="Instagram"/>'; ?>
+  </div>
+</div>
+<footer>
+  <div class="row sub-social">
+    <div class="span4">
+      <p class="lead"><img src="../../assets/images/instagram-icon-small.png" alt="Tag"> #anaheim2013</p>
+    </div>
+  </div>
+</footer>
