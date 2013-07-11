@@ -26,7 +26,7 @@ $api = Instaphp\Instaphp::Instance($token);
 <div class="row social">
   <?php
   //Search for the tag
-  $recentTags = $api->Tags->Recent('aau2013jos');
+  $recentTags = $api->Tags->Recent('aaujrogames');
   $profileImageUrl = $recentTags->data['0']->caption->from->profile_picture;
   $realName = $recentTags->data['0']->caption->from->full_name;
   $screenName = $recentTags->data['0']->caption->from->username;
@@ -48,7 +48,7 @@ $api = Instaphp\Instaphp::Instance($token);
 <footer>
   <div class="row sub-social">
     <div class="span4">
-      <p class="lead"><img src="../../assets/images/instagram-icon-small.png" alt="Tag"> #aau2013jos</p>
+      <p class="lead"><img src="../../assets/images/instagram-icon-small.png" alt="Tag"> #aaujrogames</p>
     </div>
   </div>
 </footer>
